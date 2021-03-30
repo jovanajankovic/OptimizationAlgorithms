@@ -1,0 +1,5 @@
+Najbolje resenje za sva pokretanja - raspored fajlova je :
+[0 1 0 1 0 1 1 1 0 1 0 1 0 0 1 0 1 0 1 0 0 0 1 1 0 0 1 1 1 0 0 1 0 1 1 1 0
+ 0 0 0 0 0 1 1 1 1 0 0 0 1 1 1 0 0 1 1 1 0 0 1 1 1 1 0]
+
+Najbolje resenje cost funkcije u svih 20 pokretanja je 1 bajt, odnosno 1 bajt je ostao neiskoriscen.

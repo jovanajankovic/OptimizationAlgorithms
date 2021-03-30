@@ -1,0 +1,4 @@
+Prva nula funkcije reda n = 1 : 4.493409457909
+Druga nula funkcije reda n = 1 : 7.725251836938
+Prva nula funkcije reda n = 2 : 5.763459196895
+Druga nula funkcije reda n = 2 : 9.095011330476

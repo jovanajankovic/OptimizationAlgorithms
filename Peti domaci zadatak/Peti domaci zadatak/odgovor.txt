@@ -1,0 +1,6 @@
+Vrednosti pojacanja su :
+W = (0.256821770928736, 1.605007242946297, 1.068098898849926, 4.317380539624133, 4.131589866094309, 1.291911652183678, 9.116625681310197, -9.999999999987608, 4.355876590069634, -5.203541647667111)
+
+Vrednost minimalne optimizacione funkcije : 0.002164986929253672
+
+Iscrtavanje grafika je uradjeno u istom Python kodu kao i izracunavanje potrebnih pojacanja i minimalne optimizacione funkcije(main.py).

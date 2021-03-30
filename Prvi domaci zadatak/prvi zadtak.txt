@@ -1,0 +1,30 @@
+Pronadjeno je jedno resenje, a to je uredjena cetvorka (1.2, 1.25, 1.5, 3.16).
+
+a) Program se izvrsava dosta sporije u odnosu na resenje pod b) s obzirom na to da imamo 4 ugnjezdene petlje u kojima 
+proveravamo uslov da je zbir i proizvod promenljivih i,j,k,l jednak 7.11. Resenje je napravljeno tako da se ne razmatraju
+iste cene u razlicitom poretku u cetvorkama (da ne dolazi do permutacija), a samim tim je postignuto brze izvrsavanje programa.
+To je uradjeno definisanjem petlji na sledeci nacin:
+for(int i=1;i<=711;i++)
+   for(int j=i;j<=711;j++)
+	for(int k=j;k<=711;j++)
+	     for(int l=k;l<=711;l++)
+Broj poziva optimizacione funkcije je: 2148132034
+ 
+b) Resenje zadatka pod b je brze, iz razloga sto imamo jednu petlju manje prilikom izvrsavanja algoritma (ukupno 3 ugnjezdene petlje). 
+3 petlje su u ovom slucaju bile moguce iz razloga sto se promenljiva l izrazava preko preostale tri promenljive (l=711-i-j-k).
+Zabrana permutacija je omogucena sledecim uslovom: if(proizvod==7.11*pow(100,4) && (l>k)) lista->dodaj(i,j,k,l) - u listu ce se dodati samo jedna uredjena cetvorka. 
+Prikaz definisanih petlji: 
+for (int i = 1; i <= 711; i++) {
+		for (int j = i; j <= 711; j++) {
+			for (int k = j; k <= 711; k++) {
+				int l = 711 - i - k - j;
+				Lista::provera(i, j, k, l);
+			}
+		}
+	}
+}		
+Broj poziva optimizacione funkcije je: 60157236. Na osnovu broja poziva se vidi da je ovaj program brzi u odnosu na resenje pod a).			
+
+
+c) Resenje pod b) je znatno brze u odnosu na resenje pod a), a u prethodnim odgovorima se nalazi detaljno obrazlozenje ovakvog ponasanja programa.
+Takodje, kako bi se dobilo najoptimalnije vreme izvrsavanja programa, neophodno je da se selektuje Release mode, umesto Debug mode rezima rada.

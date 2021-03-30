@@ -1,0 +1,4 @@
+Resenje oblika x = (xp1, yp1, xp2, yp2, A1, A2) je : (7.500000235092694, -7.500000007193662, -9.424776694550172, 4.077424149075502, 2.999999898621399, -1.000000056248052)
+Minimalna vrednost optimizacione funkcije je : 6.5831028984529305e-15
+
+Algoritam je realizovan tako da cim se pronadje vektor za koji je vrednost optimizacione funkcije <= 1e-14, prekida se sa radom algoritma jer pronadjeno resenje koje zadovoljava uslov zadatka.
